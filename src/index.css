@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +15,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding: 0 80px;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul > li{
+  list-style: none;
+  margin: 0 .5em;
+}
+
+.book-list {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3em;
+  width: 60%;
+  padding: 3em;
+}
+.book-list ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  padding: 1em 1.2em;
+}
+.book-list ul li{
+  width: 100%;
+  list-style: none;
+  margin: .5em auto;
+  padding: .7em 1.2em;
+  border: none;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px;
+}
+.footer-btn-box{
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
 }
